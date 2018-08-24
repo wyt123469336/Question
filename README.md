@@ -14,5 +14,9 @@ sklearn
 pandas
 
 
+#python clerkie_run.py 
+
+
+
 
 
