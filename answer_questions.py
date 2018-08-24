@@ -101,11 +101,6 @@ def is_affordable(price):
 
     APR = mortgage[1]
 
-    #Clerkie's prediction of house price in next 6 months
-    #based on house price change rate
-    print("""House price now: {}\nClerkie predicted house price after 6 months will be: {}"""
-          .format(price,int(price_f*(1+predicted_rate)**6)))
-
 
     #Mary can't afford downpayment
     if down_payment > balance:
@@ -125,6 +120,12 @@ def is_affordable(price):
         else:
             print("""Congratulations! You can buy this house
             and save {} each month""".format(int(budget - monthly_payment)))
+
+
+    #Clerkie's prediction of house price in next 6 months
+    #based on house price change rate
+    print("""\nHouse price now: {}\nClerkie predicted house price after 6 months will be: {}"""
+          .format(price,int(price_f*(1+predicted_rate)**6)))
 
 #calculate house price monthly changing rate
 def calc_house_monthly_rate(rate,months):

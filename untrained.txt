@@ -1,3 +1,6 @@
 3,check ba
 3,what's your name
 3,what is your name
+1,do i have money saved up
+1,do i have money saved up?
+1,do i have money saved up?
